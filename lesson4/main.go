@@ -19,4 +19,29 @@ func main(){
 
 	var intSlice2 []int32 = make([]int32, 3, 8)
 	fmt.Println(intSlice2)
+
+	// map ->
+	var myMap map[string]uint8 = make(map[string]uint8)
+	fmt.Println(myMap)
+
+	var myMap2 = map[string]uint8{"Sabrina": 19, "Joana Paula": 20}
+	fmt.Println(myMap2["Sabrina"])
+	var age, its = myMap2["alguem"]
+	if its{
+		fmt.Printf("The age its %v", age)
+	} else {
+		fmt.Printf("The person doesn't exists")
+	}
+
+	for name:=range myMap2{
+		fmt.Printf("nome: %v\n", name)
+	}
+	for name, age:=range myMap2{
+		fmt.Printf("nome: %v and age %v\n", name, age)
+	}
+
+	for i, v:=range intArr{
+		fmt.Printf("index: %v and value %v\n", i, v)
+	}
+
 }
