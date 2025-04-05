@@ -32,7 +32,7 @@ type engine interface{
 }
 
 func canMakeIt (e engine, miles uint8){
-	if miles<=e.milesLeft() {
+	if miles<=e.milesLeft() { 
 		fmt.Println("You can get in there")
 	} else {
 		fmt.Println("You can't get in there")
