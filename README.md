@@ -1,2 +1,2 @@
 # EstruturaDeDados
-Estudos de ED em Go
+Golang studies
